@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+   <head>
+      <title>International Dance Company</title>
+      <link rel="stylesheet" type="text/css" href="style/index.css" />
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   </head>
+   <body>
+      <div class="content">
+         <section id="header">
+            <h1><img src="images/logo.png" /> </h1>
+
+               <h2>Dance is the soul’s language</h2>
+ 
+            
+               <img class="image-header" id="draw1" src="images/draw1.png" />
+            
+           
+               <img class="image-header" id="img1" src="images/01.png" />
+               <img class="image-header" id="img4" src="images/04.png" /> 
+          
+           
+               <img class="image-header" id="img3" src="images/03.png" />
+               <img class="image-header" id="img2" src="images/02.png" />
+      
+         </section>
+         <div class="boundaries">
+            <section id="content-courses">
+               <div class="title">
+                  <h3>Courses</h3>
+               </div>
+               <img id="spiral" src="images/draw2.png" /> 
+               <div id="courses">
+                  <div class="course">
+                     <h4>modern</h4>
+                     <img src="images/course-01.png" />
+                     <p>Modern dance is a broad genre of western concert or theatrical dance, primarily arising out of Germany and the United States in the late 19th and early 20th centuries.</p>
+                  </div>
+                  <div class="course">
+                     <h4>ballet</h4>
+                     <img src="images/course-02.png" />
+                     <p>Ballet is a type of performance dance that originated during the Italian Renaissance in the fifteenth century. It has since become a widespread, highly technical form of dance with its own vocabulary. It has been globally influential and has defined the foundational techniques used in many other dance genres and cultures.</p>
+                  </div>
+               </div>
+            </section>
+            <section id="content-events">
+               <div class="title">
+                  <h3>Upcoming Events</h3>
+               </div>
+               <div id="events">
+                  <div class="event" id="event-1">
+                     <span class="event-name">classical ballet</span>
+                     <span class="event-desc">Ballet is a type of performance dance that originated during the Italian Renaissance in the fifteenth century.</span>
+                     <button>TICKETS</button>
+                  </div>
+                  <div class="event" id="event-2">
+                     <span class="event-name">modern dance</span>
+                     <span class="event-desc">Modern dance is a broad genre of western concert or theatrical dance, primarily arising out of Germany and the United States.
+                     </span>
+                     <button>TICKETS</button>
+                  </div>
+               </div>
+            </section>
+            <section id="content-contact">
+               <div class="title">
+                  <h3>Contact</h3>
+               </div>
+               <div id="zig"></div>
+               <div id="contact">
+                  <form method="" action="">
+                     <input class="lbl-input" id="contact-name" name="name" type="text" placeholder="Name" />
+                     <input class="lbl-input" id="contact-email" name="email" type="email" placeholder="E-mail" />
+                     <textarea class="lbl-input" id="contact-message" name="message" placeholder="Message"></textarea>
+                     <input value="SUBMIT" class="lbl-input btn-submit" id="contact-submit" type="submit" />
+                  </form>
+               </div>
+            </section>
+         </div>
+      </div>
+      <footer>
+         <img id="social-footer" src="images/insta.png" /><!--Icon made by Freepik from www.flaticon.com.-->
+         <img id="logo-footer" src="images/logo-blue.png" />
+         <span>© 2020</span>
+      </footer>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="js/intersection-observer.js"></script>
+      <script>
+        /* $( function() {
+		 
+         
+         	$( "#img1" ).css("left", "-130px");
+         	$( "#img1" ).animate({left:'130px'}, 5000);
+         
+         	$( "#img2" ).css("left", "100px");
+         	$( "#img2" ).animate({left:'0px'}, 5000);
+         
+         	$( "#img3" ).css("left", "0");         
+         	$( "#img3" ).animate({left:'-120px'}, 5000);
+
+         	$( "#img4" ).css("left", "50px");
+         	$( "#img4" ).animate({left:'0px'}, 5000);
+			
+			var ops = {
+         		root: null,
+         		rootMargin: "0px",
+         		threshold: [0.45]
+         	};
+			
+         	$("#courses").css({"opacity":"0","margin-top": "-800px"});
+         	var ob1 = new IntersectionObserver((entries)=> {
+         	if (Math.floor(entries[0].intersectionRatio * 100) >= 45){
+         		$('#courses').animate({"opacity":"1.0","margin-top": "-750px"},700);
+         		ob1.unobserve(document.querySelector('#courses'));
+         	}
+         	}, ops);
+         	ob1.observe(document.querySelector('#courses'));
+			
+         	$("#event-1").css({"opacity":"0","margin-top":"-30px"});
+			$("#event-2").css({"opacity":"0","margin-top":"-30px"});
+			var ob2 = new IntersectionObserver((entries)=> {
+         	if (Math.floor(entries[0].intersectionRatio * 100) >= 45){
+         		$('#event-1').animate({"opacity":"1.0","margin-top": "30px"},500, ()=>{
+					$('#event-2').animate({"opacity":"1.0","margin-top": "30px"},500);
+				});
+         		ob2.unobserve(document.querySelector('#event-1'));
+         	}
+         	}, ops);
+			ob2.observe(document.querySelector('#event-1'));
+         } );*/
+      </script>
+   </body>
+</html>
